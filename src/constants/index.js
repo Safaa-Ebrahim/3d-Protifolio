@@ -17,9 +17,10 @@ import {
   collage,
   nti,
   iti,
-  carrent,
-  jobit,
-  tripguide,
+  comfy,
+  movies,
+  lissome,
+  leon,
 } from "../assets";
 
 export const navLinks = [
@@ -29,7 +30,11 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "project",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -142,97 +147,159 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Furniture E-commerce (Comfy)",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      `Comfy is a MERN fullstack furniture Ecommerce project that has the following features:"
+      1- Regiseteration / logging-in system
+      2- Shopping cart
+      3- Product details
+      4- Checkout process
+      5- User account
+      6- Admin dashboard
+      7- Search for products
+      8- Filter products by price, categoty and brand
+      9- Contact form `,
     tags: [
       {
-        name: "react",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React-Bootstrap",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: comfy,
+    source_code_link: "https://github.com/Comfy-team/comfy-frontend",
+    source_deplyment_link: "https://comfy-frontend.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Movies",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      `Website that use a rest apis to fetch the movies and the trending movies, tv series and popular actors/actress.
+       User can search about any movie, series, or actor also can see the details of them all.`,
     tags: [
       {
-        name: "react",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React-Bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Context",
+        color: "pink-text-gradient",
+      }
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: movies,
+    source_code_link: "https://github.com/Safaa-Ebrahim/movies",
+    source_deplyment_link: "https://movies-kappa-six.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Lissome Templet",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Lissome responsive templet using bootstap",
     tags: [
       {
-        name: "nextjs",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
+      {
+        name: "Bootstrap",
+        color: "blue-text-gradient",
+      },
+      
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: lissome,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Lissome-Templet",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/Lissome-Templet/",
+  },
+  {
+    name: "Leon Temple",
+    description:
+      "Leon Responsive templet",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: leon,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Leon-Templet",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/Leon-Templet/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
