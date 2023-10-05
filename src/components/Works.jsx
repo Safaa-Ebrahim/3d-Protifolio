@@ -41,7 +41,6 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              
               <img
                 src={github}
                 alt="githup"
@@ -55,7 +54,7 @@ const ProjectCard = ({
               onClick={() => window.open(source_deplyment_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <FontAwesomeIcon icon={faRocket}/>
+              <FontAwesomeIcon icon={faRocket} />
             </div>
           </div>
         </div>
