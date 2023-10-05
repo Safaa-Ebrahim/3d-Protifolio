@@ -20,9 +20,10 @@ import nti from "./company/nti2.png";
 import iti from "./company/iti.png";
 import collage from "./company/collage.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import comfy from './projects/Comfy - Where Luxury Meets Comfort.png';
+import movies from './projects/movies.png';
+import lissome from './projects/lissome-Templat.png';
+import leon from './projects/leon.png';
 
 export {
   logo,
@@ -44,7 +45,8 @@ export {
   nti,
   iti,
   collage,
-  carrent,
-  jobit,
-  tripguide,
+  comfy,
+  movies,
+  lissome,
+  leon,
 };
