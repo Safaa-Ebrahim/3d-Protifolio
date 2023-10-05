@@ -147,12 +147,10 @@ const experiences = [
   },
 ];
 
-
 const projects = [
   {
     name: "Furniture E-commerce (Comfy)",
-    description:
-      `Comfy is a MERN fullstack furniture Ecommerce project that has the following features:"
+    description: `Comfy is a MERN fullstack furniture Ecommerce project that has the following features:"
       1- Regiseteration / logging-in system
       2- Shopping cart
       3- Product details
@@ -210,8 +208,7 @@ const projects = [
   },
   {
     name: "Movies",
-    description:
-      `Website that use a rest apis to fetch the movies and the trending movies, tv series and popular actors/actress.
+    description: `Website that use a rest apis to fetch the movies and the trending movies, tv series and popular actors/actress.
        User can search about any movie, series, or actor also can see the details of them all.`,
     tags: [
       {
@@ -249,7 +246,7 @@ const projects = [
       {
         name: "Context",
         color: "pink-text-gradient",
-      }
+      },
     ],
     image: movies,
     source_code_link: "https://github.com/Safaa-Ebrahim/movies",
@@ -257,8 +254,7 @@ const projects = [
   },
   {
     name: "Lissome Templet",
-    description:
-      "Lissome responsive templet using bootstap",
+    description: "Lissome responsive templet using bootstap",
     tags: [
       {
         name: "HTML",
@@ -276,7 +272,6 @@ const projects = [
         name: "Bootstrap",
         color: "blue-text-gradient",
       },
-      
     ],
     image: lissome,
     source_code_link: "https://github.com/Safaa-Ebrahim/Lissome-Templet",
@@ -284,8 +279,7 @@ const projects = [
   },
   {
     name: "Leon Temple",
-    description:
-      "Leon Responsive templet",
+    description: "Leon Responsive templet",
     tags: [
       {
         name: "HTML",
