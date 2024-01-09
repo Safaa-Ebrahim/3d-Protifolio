@@ -24,6 +24,8 @@ import comfy from './projects/Comfy - Where Luxury Meets Comfort.png';
 import movies from './projects/movies.png';
 import lissome from './projects/lissome-Templat.png';
 import leon from './projects/leon.png';
+import kasper from './projects/kasper-template.png';
+import firebaseTask from './projects/firebase-task.png';
 
 export {
   logo,
@@ -49,4 +51,6 @@ export {
   movies,
   lissome,
   leon,
+  kasper,
+  firebaseTask,
 };
