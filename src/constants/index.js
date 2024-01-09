@@ -21,6 +21,8 @@ import {
   movies,
   lissome,
   leon,
+  kasper,
+  firebaseTask,
 } from "../assets";
 
 export const navLinks = [
@@ -110,14 +112,16 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Electronics and Commenication Engineer",
-    company_name: "Mansoura University",
-    icon: collage,
+    title: "Mearn Full stack Developer",
+    company_name: "Information Technology Institute",
+    icon: iti,
     iconBg: "#383E56",
-    date: "Sep 2017 - Aug 2022",
+    date: "Mar 2023 - Jun 2023",
     points: [
-      "Grade: Excellent with honors.",
-      "Graduation Project: (mobile application using Flutter) - Grade: Excellent.",
+      "Developing and maintaining web applications using html, CSS, JS, React.js, Mongodb, Node.js,Express.js and other related technologies.",
+      "Collaborating with iti developer to create high-quality websites.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
@@ -133,21 +137,65 @@ const experiences = [
     ],
   },
   {
-    title: "Mearn Full stack Developer",
-    company_name: "Information Technology Institute",
-    icon: iti,
+    title: "Electronics and Commenication Engineer",
+    company_name: "Mansoura University",
+    icon: collage,
     iconBg: "#383E56",
-    date: "Mar 2023 - Jun 2023",
+    date: "Sep 2017 - Aug 2022",
     points: [
-      "Developing and maintaining web applications using html, CSS, JS, React.js, Mongodb, Node.js,Express.js and other related technologies.",
-      "Collaborating with iti developer to create high-quality websites.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Grade: Excellent with honors.",
+      "Graduation Project: (mobile application using Flutter) - Grade: Excellent.",
     ],
   },
 ];
 
 const projects = [
+  {
+    name: "Movies",
+    description: `Website that use a rest apis to fetch the movies and the trending movies, tv series and popular actors/actress.
+       User can search about any movie, series, or actor also can see the details of them all.`,
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React-Bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Context",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: movies,
+    source_code_link: "https://github.com/Safaa-Ebrahim/movies",
+    source_deplyment_link: "https://movies-kappa-six.vercel.app/",
+  },
   {
     name: "Furniture E-commerce (Comfy)",
     description: `Comfy is a MERN fullstack furniture Ecommerce project that has the following features:"
@@ -207,9 +255,14 @@ const projects = [
     source_deplyment_link: "https://comfy-frontend.vercel.app/",
   },
   {
-    name: "Movies",
-    description: `Website that use a rest apis to fetch the movies and the trending movies, tv series and popular actors/actress.
-       User can search about any movie, series, or actor also can see the details of them all.`,
+    name: "Firebase & React Task",
+    description: `practise of learning firebase and react, has the following features:
+    1- Regiseteration / logging-in system.
+    2- sigin with email/password and google.
+    3- User account.
+    4- crud operation of book store.
+    5- uploading images.
+`,
     tags: [
       {
         name: "HTML",
@@ -224,33 +277,29 @@ const projects = [
         color: "pink-text-gradient",
       },
       {
-        name: "React",
+        name: "Bootstrap",
         color: "blue-text-gradient",
       },
       {
-        name: "Restapi",
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
-        name: "Redux",
+        name: "React",
         color: "pink-text-gradient",
       },
       {
-        name: "Bootstrap",
+        name: "redux",
         color: "blue-text-gradient",
       },
       {
         name: "React-Bootstrap",
         color: "green-text-gradient",
       },
-      {
-        name: "Context",
-        color: "pink-text-gradient",
-      },
     ],
-    image: movies,
-    source_code_link: "https://github.com/Safaa-Ebrahim/movies",
-    source_deplyment_link: "https://movies-kappa-six.vercel.app/",
+    image: firebaseTask,
+    source_code_link: "https://github.com/Safaa-Ebrahim/react-firebase",
+    source_deplyment_link: "https://firebase-crud-auth-pi.vercel.app/login",
   },
   {
     name: "Lissome Templet",
@@ -276,6 +325,23 @@ const projects = [
     image: lissome,
     source_code_link: "https://github.com/Safaa-Ebrahim/Lissome-Templet",
     source_deplyment_link: "https://safaa-ebrahim.github.io/Lissome-Templet/",
+  },
+  {
+    name: "Kasper Templet",
+    description: "Kasper responsive templet",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: kasper,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Kasper-Template",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/Kasper-Template/",
   },
   {
     name: "Leon Temple",
