@@ -26,6 +26,11 @@ import lissome from './projects/lissome-Templat.png';
 import leon from './projects/leon.png';
 import kasper from './projects/kasper-template.png';
 import firebaseTask from './projects/firebase-task.png';
+import weatherApp from "./projects/weather-app.png";
+import bondi from "./projects/Bondi-templet.png";
+import elzero from "./projects/Elzero-templet.png";
+import dashboard from "./projects/Dashboard.png";
+
 
 export {
   logo,
@@ -53,4 +58,8 @@ export {
   leon,
   kasper,
   firebaseTask,
+  weatherApp,
+  bondi,
+  dashboard,
+  elzero
 };
