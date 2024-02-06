@@ -26,7 +26,7 @@ import {
   weatherApp,
   bondi,
   dashboard,
-  elzero
+  elzero,
 } from "../assets";
 
 export const navLinks = [
@@ -450,23 +450,24 @@ const projects = [
     source_code_link: "https://github.com/Safaa-Ebrahim/Kasper-Template",
     source_deplyment_link: "https://safaa-ebrahim.github.io/Kasper-Template/",
   },
-  {
-    name: "Leon Temple",
-    description: "Leon Responsive templet",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-    ],
-    image: leon,
-    source_code_link: "https://github.com/Safaa-Ebrahim/Leon-Templet",
-    source_deplyment_link: "https://safaa-ebrahim.github.io/Leon-Templet/",
-  },
+  // {
+  //   name: "Leon Temple",
+  //   description: "Leon Responsive templet",
+  //   tags: [
+  //     {
+  //       name: "HTML",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "CSS",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: leon,
+  //   source_code_link: "https://github.com/Safaa-Ebrahim/Leon-Templet",
+  //   source_deplyment_link: "https://safaa-ebrahim.github.io/Leon-Templet/",
+  // },
+  
 ];
 
 export { services, technologies, experiences, projects };
