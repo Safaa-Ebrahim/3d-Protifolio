@@ -23,6 +23,10 @@ import {
   leon,
   kasper,
   firebaseTask,
+  weatherApp,
+  bondi,
+  dashboard,
+  elzero
 } from "../assets";
 
 export const navLinks = [
@@ -302,6 +306,92 @@ const projects = [
     source_deplyment_link: "https://firebase-crud-auth-pi.vercel.app/login",
   },
   {
+    name: "Elzero Templet",
+    description: "Elzero responsive templet",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Animation",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: elzero,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Elzero",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/Elzero/",
+  },
+  {
+    name: "Weather App",
+    description: `The Weather Forecasting user
+     can: 1- input the name of a city or location to get weather information for that specific area. 
+     2- Weather Display: Once the user enter a location, the app fethes data from a weather api and displays the information.
+     3- observe the weather for the next 5-6 days.`,
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "RestApi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: weatherApp,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Weather-App",
+    source_deplyment_link: "https://weather-app-forecasting.vercel.app/",
+  },
+  {
+    name: "Bondi Templet",
+    description: "Bondi responsive templet using bootstap",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: bondi,
+    source_code_link: "https://github.com/Safaa-Ebrahim/bondi-templet",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/bondi-templet/",
+  },
+  {
     name: "Lissome Templet",
     description: "Lissome responsive templet using bootstap",
     tags: [
@@ -325,6 +415,23 @@ const projects = [
     image: lissome,
     source_code_link: "https://github.com/Safaa-Ebrahim/Lissome-Templet",
     source_deplyment_link: "https://safaa-ebrahim.github.io/Lissome-Templet/",
+  },
+  {
+    name: "Dashboard Templet",
+    description: "Dashboard responsive templet",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: dashboard,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Dashboard",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/Dashboard/",
   },
   {
     name: "Kasper Templet",
