@@ -32,30 +32,38 @@ const ProjectCard = ({
         <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt="project_image"
+            alt={`${name} preview`}
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="githup"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
+          <div className="absolute inset-0 flex justify-end items-start gap-2 m-3 card-img_hover">
+            {source_code_link && (
+              <a
+                href={source_code_link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${name} source code`}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
+              >
+                <img
+                  src={github}
+                  alt=""
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </a>
+            )}
 
-          <div className="absolute inset-0 mr-[60px] flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_deplyment_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <FontAwesomeIcon icon={faRocket} />
-            </div>
+            {source_deplyment_link && (
+              <a
+                href={source_deplyment_link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${name} live site`}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
+              >
+                <FontAwesomeIcon icon={faRocket} />
+              </a>
+            )}
           </div>
         </div>
 
