@@ -36,6 +36,7 @@ import {
   bondi,
   dashboard,
   enableDashboard,
+  gameDayMeals,
   elzero,
   projectPlaceholder,
 } from "../assets";
@@ -198,7 +199,7 @@ const projects = [
       { name: "Stripe", color: "pink-text-gradient" },
       { name: "Google Places API", color: "blue-text-gradient" },
     ],
-    image: projectPlaceholder,
+    image: gameDayMeals,
     source_code_link: null,
     source_deplyment_link: null,
   },
