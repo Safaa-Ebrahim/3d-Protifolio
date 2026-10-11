@@ -19,6 +19,7 @@ import bootstrap from "./tech/bootstrap.png";
 import nti from "./company/nti2.png";
 import iti from "./company/iti.png";
 import collage from "./company/collage.png";
+import zetaton from "./company/zetaton.png";
 
 import comfy from './projects/Comfy - Where Luxury Meets Comfort.png';
 import movies from './projects/movies.png';
@@ -52,6 +53,7 @@ export {
   nti,
   iti,
   collage,
+  zetaton,
   comfy,
   movies,
   lissome,
