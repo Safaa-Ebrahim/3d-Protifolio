@@ -35,6 +35,7 @@ import {
   weatherApp,
   bondi,
   dashboard,
+  enableDashboard,
   elzero,
   projectPlaceholder,
 } from "../assets";
@@ -204,7 +205,7 @@ const projects = [
   {
     name: "Enable",
     description:
-      "A dashboard and mobile platform for task assignment and product tracking, featuring map-based job planning, role management, company wallets and payouts, analytics, and AI-assisted image reviews.",
+      "A business operations platform for managing missions, stores, work orders, and payouts across dashboard and mobile experiences. Features map-based job planning, analytics, role-based access, and AI-powered OCR that extracts product details from field photos.",
     tags: [
       { name: "React", color: "blue-text-gradient" },
       { name: "Redux", color: "green-text-gradient" },
@@ -214,9 +215,11 @@ const projects = [
       { name: "Material UI", color: "pink-text-gradient" },
       { name: "Google Maps API", color: "blue-text-gradient" },
     ],
-    image: projectPlaceholder,
+    image: enableDashboard,
+    imageFit: "contain",
     source_code_link: null,
     source_deplyment_link: null,
+    project_link: null,
   },
   {
     name: "Wakkt",
