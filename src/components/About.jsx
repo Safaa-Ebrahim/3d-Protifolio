@@ -37,12 +37,13 @@ const About=() =>{
         variants={fadeIn(",", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in HTML, CSS,
-        JavaScript, Bootstrap and mongodb, and expertise in frameworks like
-        React, Node.js, and Express.js. I'm a quick learner and collaborate
-        closely with clients to create efficient, scalable, and user-friendly
-        solutions that solve real-world problems. Let's work together to bring
-        your ideas to life!
+        I'm a frontend-focused full stack developer with 3+ years of experience
+        building responsive web applications across multiple products. I work
+        primarily with React, Redux Toolkit, and modern UI systems, and also
+        contribute to backend services using Node.js, Express, REST APIs,
+        Firebase, Supabase, and MongoDB. My experience includes multi-role
+        authentication, payment integrations, real-time dashboards, and
+        interactive maps, alongside code reviews and release management.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => {
