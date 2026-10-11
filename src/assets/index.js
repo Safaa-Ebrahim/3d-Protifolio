@@ -54,6 +54,7 @@ import gameDayMeals from "./projects/game-day-meals-site.png";
 import wakktPreview from "./projects/wakkt-preview.png";
 import tableTuckPreview from "./projects/tabletuck-preview.png";
 import tapnetPreview from "./projects/tapnet-preview.png";
+import projectPlaceholder from "./projects/project-placeholder.svg";
 
 
 export {
@@ -109,5 +110,6 @@ export {
   wakktPreview,
   tableTuckPreview,
   tapnetPreview,
+  projectPlaceholder,
   elzero,
 };
