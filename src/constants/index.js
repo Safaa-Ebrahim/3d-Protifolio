@@ -17,6 +17,7 @@ import {
   collage,
   nti,
   iti,
+  zetaton,
   comfy,
   movies,
   lissome,
@@ -50,19 +51,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Development",
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "React & UI Systems",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full-Stack Applications",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Code Reviews & Release Management",
     icon: creator,
   },
 ];
@@ -116,21 +117,33 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Mearn Full stack Developer",
-    company_name: "Information Technology Institute",
+    title: "Frontend-focused Full Stack Developer",
+    company_name: "Zetaton | Remote",
+    icon: zetaton,
+    iconBg: "#383E56",
+    date: "Feb 2024 - Present",
+    points: [
+      "Build and maintain responsive, mobile-first applications with React, Redux Toolkit, Material UI, Ant Design, and Tailwind CSS, with backend contributions using Node.js, Express, REST APIs, Firebase, Supabase, and MongoDB.",
+      "Lead frontend development across five live products, delivering multi-role authentication, real-time dashboards, interactive maps, Stripe payments, and multilingual support.",
+      "Mentor five junior developers through code reviews and architectural guidance.",
+      "Improve performance with lazy loading, code splitting, and dependency cleanup, reducing average page load time by approximately 40%.",
+      "Deliver features across workforce management, digital business cards, restaurant systems, and e-commerce products.",
+    ],
+  },
+  {
+    title: "Full Stack Web Development (MERN)",
+    company_name: "Information Technology Institute (ITI)",
     icon: iti,
     iconBg: "#383E56",
     date: "Mar 2023 - Jun 2023",
     points: [
-      "Developing and maintaining web applications using html, CSS, JS, React.js, Mongodb, Node.js,Express.js and other related technologies.",
-      "Collaborating with iti developer to create high-quality websites.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed full-stack web development training using the MERN stack.",
+      "Built an e-commerce graduation project with product browsing, cart, checkout, and a REST API backed by MongoDB.",
     ],
   },
   {
     title: "Web Design",
-    company_name: "National Telecommunication Institute",
+    company_name: "National Telecommunication Institute (NTI)",
     icon: nti,
     iconBg: "#E6DEDD",
     date: "Nov 2022 - Dec 2022",
@@ -141,14 +154,14 @@ const experiences = [
     ],
   },
   {
-    title: "Electronics and Commenication Engineer",
+    title: "B.Sc. in Electronics and Communication Engineering",
     company_name: "Mansoura University",
     icon: collage,
     iconBg: "#383E56",
-    date: "Sep 2017 - Aug 2022",
+    date: "Sep 2017 - Jul 2022",
     points: [
-      "Grade: Excellent with honors.",
-      "Graduation Project: (mobile application using Flutter) - Grade: Excellent.",
+      "Graduated with Excellent with Honors.",
+      "Graduation project: Flutter mobile application, graded Excellent.",
     ],
   },
 ];
@@ -202,16 +215,7 @@ const projects = [
   },
   {
     name: "Furniture E-commerce (Comfy)",
-    description: `Comfy is a MERN fullstack furniture Ecommerce project that has the following features:"
-      1- Regiseteration / logging-in system
-      2- Shopping cart
-      3- Product details
-      4- Checkout process
-      5- User account
-      6- Admin dashboard
-      7- Search for products
-      8- Filter products by price, categoty and brand
-      9- Contact form `,
+    description: `A full-stack furniture e-commerce project built as an ITI graduation project. Includes product browsing, filtering, cart management, checkout, and a REST API built with Node.js and Express, connected to MongoDB.`,
     tags: [
       {
         name: "HTML",
@@ -450,23 +454,23 @@ const projects = [
     source_code_link: "https://github.com/Safaa-Ebrahim/Kasper-Template",
     source_deplyment_link: "https://safaa-ebrahim.github.io/Kasper-Template/",
   },
-  // {
-  //   name: "Leon Temple",
-  //   description: "Leon Responsive templet",
-  //   tags: [
-  //     {
-  //       name: "HTML",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "CSS",
-  //       color: "green-text-gradient",
-  //     },
-  //   ],
-  //   image: leon,
-  //   source_code_link: "https://github.com/Safaa-Ebrahim/Leon-Templet",
-  //   source_deplyment_link: "https://safaa-ebrahim.github.io/Leon-Templet/",
-  // },
+  {
+    name: "Leon Temple",
+    description: "Leon Responsive templet",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: leon,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Leon-Templet",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/Leon-Templet/",
+  },
   
 ];
 
