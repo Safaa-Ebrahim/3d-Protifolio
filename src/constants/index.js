@@ -11,9 +11,17 @@ import {
   redux,
   nodejs,
   mongodb,
-  git,
-  github,
-  bootstrap,
+  antdesign,
+  express,
+  firebase,
+  formik,
+  googlemaps,
+  jest,
+  mui,
+  reacthookform,
+  stripe,
+  supabase,
+  tailwindcss,
   collage,
   nti,
   iti,
@@ -68,50 +76,58 @@ const services = [
   },
 ];
 
-const technologies = [
+const technologyGroups = [
   {
-    name: "HTML 5",
-    icon: html,
+    title: "Frontend & UI",
+    description: "Building responsive interfaces and reusable experiences.",
+    technologies: [
+      { name: "HTML5", icon: html },
+      { name: "CSS3", icon: css },
+      { name: "JavaScript", icon: javascript },
+      { name: "TypeScript", icon: typescript },
+      { name: "React", icon: reactjs },
+      { name: "Redux Toolkit", icon: redux },
+      { name: "Material UI", icon: mui },
+      { name: "Ant Design", icon: antdesign },
+      { name: "Tailwind CSS", icon: tailwindcss },
+    ],
   },
   {
-    name: "CSS 3",
-    icon: css,
+    title: "Backend & Data",
+    description: "APIs, application services, and data storage.",
+    technologies: [
+      { name: "Node.js", icon: nodejs },
+      { name: "Express.js", icon: express },
+      { name: "MongoDB", icon: mongodb },
+      { name: "Firebase", icon: firebase },
+      { name: "Supabase", icon: supabase },
+      { name: "REST APIs", icon: backend },
+    ],
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    title: "Integrations & Testing",
+    description: "Connecting product features and validating user flows.",
+    technologies: [
+      { name: "Stripe", icon: stripe },
+      { name: "Google Maps API", icon: googlemaps },
+      { name: "Formik", icon: formik },
+      { name: "React Hook Form & Yup", icon: reacthookform },
+      { name: "Jest", icon: jest },
+    ],
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "github",
-    icon: github,
-  },
-  {
-    name: "bootstrap",
-    icon: bootstrap,
+    title: "Additional Tools",
+    description: "Other tools and libraries from my broader toolkit.",
+    tools: [
+      "shadcn/ui",
+      "Bootstrap",
+      "Git",
+      "GitHub",
+      "Jenkins / CI/CD",
+      "Cloudflare",
+      "Postman",
+      "Azure DevOps",
+    ],
   },
 ];
 
@@ -474,4 +490,4 @@ const projects = [
   
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologyGroups, experiences, projects };
