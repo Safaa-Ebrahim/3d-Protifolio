@@ -51,6 +51,9 @@ import elzero from "./projects/Elzero-templet.png";
 import dashboard from "./projects/Dashboard.png";
 import enableDashboard from "./projects/enable-dashboard.jpg";
 import gameDayMeals from "./projects/game-day-meals-site.png";
+import wakktPreview from "./projects/wakkt-preview.png";
+import tableTuckPreview from "./projects/tabletuck-preview.png";
+import tapnetPreview from "./projects/tapnet-preview.png";
 
 
 export {
@@ -103,5 +106,8 @@ export {
   dashboard,
   enableDashboard,
   gameDayMeals,
+  wakktPreview,
+  tableTuckPreview,
+  tapnetPreview,
   elzero,
 };
