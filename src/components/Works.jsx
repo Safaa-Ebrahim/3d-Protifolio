@@ -8,7 +8,10 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faRocket,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = ({
   index,
@@ -16,8 +19,11 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  imageFit = "cover",
+  imageBackground = "#0b0b1f",
   source_code_link,
   source_deplyment_link,
+  project_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -33,7 +39,14 @@ const ProjectCard = ({
           <img
             src={image}
             alt={`${name} preview`}
-            className="w-full h-full object-cover rounded-2xl"
+            style={
+              imageFit === "contain"
+                ? { backgroundColor: imageBackground }
+                : undefined
+            }
+            className={`w-full h-full rounded-2xl ${
+              imageFit === "contain" ? "object-contain" : "object-cover"
+            }`}
           />
 
           <div className="absolute inset-0 flex justify-end items-start gap-2 m-3 card-img_hover">
@@ -62,6 +75,18 @@ const ProjectCard = ({
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
               >
                 <FontAwesomeIcon icon={faRocket} />
+              </a>
+            )}
+
+            {project_link && (
+              <a
+                href={project_link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${name} project details`}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
+              >
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </a>
             )}
           </div>
