@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Safaa's 3D Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive developer portfolio built to introduce Safaa Mahmoud Ebrahim, present her experience and technical skills, and showcase selected personal and professional projects. The interface combines a dark visual theme with animated sections and interactive 3D scenes.
 
-## Available Scripts
+## Portfolio sections
 
-In the project directory, you can run:
+- **Hero** — introduction and a quick overview of Safaa's role.
+- **About** — professional summary and areas of focus.
+- **Experience** — work history and education.
+- **Tech stack** — technologies grouped by area.
+- **Projects** — project summaries, technology tags, screenshots, and available live-site or project links.
+- **Contact** — a contact form and an interactive 3D Earth.
 
-### `npm start`
+## Built with
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18 and Create React App
+- React Three Fiber, Drei, and Three.js for 3D scenes
+- Tailwind CSS for styling
+- Framer Motion for animations
+- React Vertical Timeline for the experience section
+- EmailJS for contact form submissions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run locally
 
-### `npm test`
+### Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm
 
-### `npm run build`
+### Install and start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The development server opens at [http://localhost:3000](http://localhost:3000). It reloads when source files change.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Other commands
 
-### `npm run eject`
+```bash
+npm test
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `npm test` starts the Create React App test runner.
+- `npm run build` creates an optimized production build in `build/`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```text
+public/
+  planet/                 Earth model and its textures
+  Safaa_Mahmoud_Ebrahim_CV.pdf
+src/
+  assets/
+    company/              Company and education logos
+    projects/             Project screenshots and preview images
+    tech/                 Technology icons
+  components/             Page sections and reusable UI
+    canvas/               React Three Fiber scenes
+  constants/
+    index.js              Portfolio text, experience, skills, and project data
+  hoc/                    Higher-order components, including section wrappers
+  utils/                  Shared animation variants and helpers
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Updating portfolio content
 
-## Learn More
+- Edit `src/constants/index.js` to update the introduction data, experience, technology groups, project descriptions, tags, and links.
+- Add project screenshots to `src/assets/projects/`, export them from `src/assets/index.js`, and reference the exported image in the matching project entry.
+- Project links are optional. Leave a link as `null` when it is not available; its button will not be shown.
+- Replace a project's placeholder image with a real screenshot when one becomes available.
+- Place the downloadable CV in `public/` and update the CV link in the component that uses it if the file name changes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run `npm run build`, then deploy the generated `build/` directory to a static hosting provider. Because the app uses React Router, configure the host to serve `index.html` for application routes.
 
-### Code Splitting
+## 3D model attribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The Earth model and its textures are in `public/planet/`. Keep the included `public/planet/license.txt` attribution with the model when redistributing the project.

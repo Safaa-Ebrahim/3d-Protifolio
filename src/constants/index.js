@@ -11,12 +11,21 @@ import {
   redux,
   nodejs,
   mongodb,
-  git,
-  github,
-  bootstrap,
+  antdesign,
+  express,
+  firebase,
+  formik,
+  googlemaps,
+  jest,
+  mui,
+  reacthookform,
+  stripe,
+  supabase,
+  tailwindcss,
   collage,
   nti,
   iti,
+  zetaton,
   comfy,
   movies,
   lissome,
@@ -26,6 +35,11 @@ import {
   weatherApp,
   bondi,
   dashboard,
+  enableDashboard,
+  gameDayMeals,
+  wakktPreview,
+  tableTuckPreview,
+  tapnetPreview,
   elzero,
 } from "../assets";
 
@@ -50,87 +64,107 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Development",
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "React & UI Systems",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full-Stack Applications",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Code Reviews & Release Management",
     icon: creator,
   },
 ];
 
-const technologies = [
+const technologyGroups = [
   {
-    name: "HTML 5",
-    icon: html,
+    title: "Frontend & UI",
+    description: "Building responsive interfaces and reusable experiences.",
+    technologies: [
+      { name: "HTML5", icon: html },
+      { name: "CSS3", icon: css },
+      { name: "JavaScript", icon: javascript },
+      { name: "TypeScript", icon: typescript },
+      { name: "React", icon: reactjs },
+      { name: "Redux Toolkit", icon: redux },
+      { name: "Material UI", icon: mui },
+      { name: "Ant Design", icon: antdesign },
+      { name: "Tailwind CSS", icon: tailwindcss },
+    ],
   },
   {
-    name: "CSS 3",
-    icon: css,
+    title: "Backend & Data",
+    description: "APIs, application services, and data storage.",
+    technologies: [
+      { name: "Node.js", icon: nodejs },
+      { name: "Express.js", icon: express },
+      { name: "MongoDB", icon: mongodb },
+      { name: "Firebase", icon: firebase },
+      { name: "Supabase", icon: supabase },
+      { name: "REST APIs", icon: backend },
+    ],
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    title: "Integrations & Testing",
+    description: "Connecting product features and validating user flows.",
+    technologies: [
+      { name: "Stripe", icon: stripe },
+      { name: "Google Maps API", icon: googlemaps },
+      { name: "Formik", icon: formik },
+      { name: "React Hook Form & Yup", icon: reacthookform },
+      { name: "Jest", icon: jest },
+    ],
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "github",
-    icon: github,
-  },
-  {
-    name: "bootstrap",
-    icon: bootstrap,
+    title: "Additional Tools",
+    description: "Other tools and libraries from my broader toolkit.",
+    tools: [
+      "shadcn/ui",
+      "Bootstrap",
+      "Git",
+      "GitHub",
+      "Jenkins / CI/CD",
+      "Cloudflare",
+      "Postman",
+      "Azure DevOps",
+    ],
   },
 ];
 
 const experiences = [
   {
-    title: "Mearn Full stack Developer",
-    company_name: "Information Technology Institute",
+    title: "Frontend-focused Full Stack Developer",
+    company_name: "Zetaton | Remote",
+    icon: zetaton,
+    iconBg: "#383E56",
+    date: "Feb 2024 - Present",
+    points: [
+      "Build and maintain responsive, mobile-first applications with React, Redux Toolkit, Material UI, Ant Design, and Tailwind CSS, with backend contributions using Node.js, Express, REST APIs, Firebase, Supabase, and MongoDB.",
+      "Lead frontend development across five live products, delivering multi-role authentication, real-time dashboards, interactive maps, Stripe payments, and multilingual support.",
+      "Mentor five junior developers through code reviews and architectural guidance.",
+      "Improve performance with lazy loading, code splitting, and dependency cleanup, reducing average page load time by approximately 40%.",
+      "Deliver features across workforce management, digital business cards, restaurant systems, and e-commerce products.",
+    ],
+  },
+  {
+    title: "Full Stack Web Development (MERN)",
+    company_name: "Information Technology Institute (ITI)",
     icon: iti,
     iconBg: "#383E56",
     date: "Mar 2023 - Jun 2023",
     points: [
-      "Developing and maintaining web applications using html, CSS, JS, React.js, Mongodb, Node.js,Express.js and other related technologies.",
-      "Collaborating with iti developer to create high-quality websites.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed full-stack web development training using the MERN stack.",
+      "Built an e-commerce graduation project with product browsing, cart, checkout, and a REST API backed by MongoDB.",
     ],
   },
   {
     title: "Web Design",
-    company_name: "National Telecommunication Institute",
+    company_name: "National Telecommunication Institute (NTI)",
     icon: nti,
     iconBg: "#E6DEDD",
     date: "Nov 2022 - Dec 2022",
@@ -141,19 +175,109 @@ const experiences = [
     ],
   },
   {
-    title: "Electronics and Commenication Engineer",
+    title: "B.Sc. in Electronics and Communication Engineering",
     company_name: "Mansoura University",
     icon: collage,
     iconBg: "#383E56",
-    date: "Sep 2017 - Aug 2022",
+    date: "Sep 2017 - Jul 2022",
     points: [
-      "Grade: Excellent with honors.",
-      "Graduation Project: (mobile application using Flutter) - Grade: Excellent.",
+      "Graduated with Excellent with Honors.",
+      "Graduation project: Flutter mobile application, graded Excellent.",
     ],
   },
 ];
 
 const projects = [
+  {
+    name: "Game Day Meals",
+    description:
+      "A full-stack food-ordering platform for web and mobile with real-time order tracking, event management, and separate experiences for restaurants, coaches, players, and administrators.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux Toolkit", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "shadcn/ui", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Stripe", color: "pink-text-gradient" },
+      { name: "Google Places API", color: "blue-text-gradient" },
+    ],
+    image: gameDayMeals,
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
+  {
+    name: "Enable",
+    description:
+      "A business operations platform for managing missions, stores, work orders, and payouts across dashboard and mobile experiences. Features map-based job planning, analytics, role-based access, and AI-powered OCR that extracts product details from field photos.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Node.js", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Material UI", color: "pink-text-gradient" },
+      { name: "Google Maps API", color: "blue-text-gradient" },
+    ],
+    image: enableDashboard,
+    imageFit: "contain",
+    source_code_link: null,
+    source_deplyment_link: null,
+    project_link: null,
+  },
+  {
+    name: "Wakkt",
+    description:
+      "A workforce management system for attendance and operations, with role-based administration, Supabase-backed dashboards, and time-off request workflows. Also contributed to technical reviews and release management.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Node.js", color: "blue-text-gradient" },
+      { name: "Supabase", color: "green-text-gradient" },
+      { name: "Material UI", color: "pink-text-gradient" },
+      { name: "Cloudflare", color: "blue-text-gradient" },
+    ],
+    image: wakktPreview,
+    imageFit: "contain",
+    imageBackground: "#080808",
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
+  {
+    name: "Tapnet",
+    description:
+      "A digital business card platform that uses NFC and QR codes for convenient, eco-friendly contact sharing. Contributed as a frontend technical reviewer and release manager.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Node.js", color: "blue-text-gradient" },
+      { name: "Supabase", color: "green-text-gradient" },
+      { name: "Material UI", color: "pink-text-gradient" },
+      { name: "Cloudflare", color: "blue-text-gradient" },
+    ],
+    image: tapnetPreview,
+    imageFit: "contain",
+    imageBackground: "#f2f2f2",
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
+  {
+    name: "TableTuck",
+    description:
+      "A multi-brand restaurant platform spanning its website, dashboard, and mobile apps. Developed frontend features including improved data handling, soft deletes, live updates, multilingual pages, and location-based store discovery.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Material UI", color: "blue-text-gradient" },
+    ],
+    image: tableTuckPreview,
+    imageFit: "contain",
+    imageBackground: "#080808",
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
   {
     name: "Movies",
     description: `Website that use a rest apis to fetch the movies and the trending movies, tv series and popular actors/actress.
@@ -202,16 +326,7 @@ const projects = [
   },
   {
     name: "Furniture E-commerce (Comfy)",
-    description: `Comfy is a MERN fullstack furniture Ecommerce project that has the following features:"
-      1- Regiseteration / logging-in system
-      2- Shopping cart
-      3- Product details
-      4- Checkout process
-      5- User account
-      6- Admin dashboard
-      7- Search for products
-      8- Filter products by price, categoty and brand
-      9- Contact form `,
+    description: `A full-stack furniture e-commerce project built as an ITI graduation project. Includes product browsing, filtering, cart management, checkout, and a REST API built with Node.js and Express, connected to MongoDB.`,
     tags: [
       {
         name: "HTML",
@@ -450,24 +565,24 @@ const projects = [
     source_code_link: "https://github.com/Safaa-Ebrahim/Kasper-Template",
     source_deplyment_link: "https://safaa-ebrahim.github.io/Kasper-Template/",
   },
-  // {
-  //   name: "Leon Temple",
-  //   description: "Leon Responsive templet",
-  //   tags: [
-  //     {
-  //       name: "HTML",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "CSS",
-  //       color: "green-text-gradient",
-  //     },
-  //   ],
-  //   image: leon,
-  //   source_code_link: "https://github.com/Safaa-Ebrahim/Leon-Templet",
-  //   source_deplyment_link: "https://safaa-ebrahim.github.io/Leon-Templet/",
-  // },
+  {
+    name: "Leon Temple",
+    description: "Leon Responsive templet",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: leon,
+    source_code_link: "https://github.com/Safaa-Ebrahim/Leon-Templet",
+    source_deplyment_link: "https://safaa-ebrahim.github.io/Leon-Templet/",
+  },
   
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologyGroups, experiences, projects };

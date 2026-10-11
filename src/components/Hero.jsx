@@ -19,13 +19,19 @@ export default function Hero() {
             Hi, I'm <span className="text-[#915eff]">Safaa</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2  text-white-100`}>
-            I'm a react frontend developer, <br className="sm:block hidden" />
-            I have a strong background in
+            I'm a frontend-focused full stack developer with 3+ years of
             <br className="sm:block hidden" />
-            creating interactive user interfaces
+            experience building responsive applications and
             <br className="sm:block hidden" />
-            and developing web application.
+            polished user experiences with React and modern web technologies.
           </p>
+          {/* <a
+            href={`${process.env.PUBLIC_URL}/Safaa_Mahmoud_Ebrahim_CV.pdf`}
+            download="Safaa_Mahmoud_Ebrahim_CV.pdf"
+            className="mt-6 inline-flex w-fit items-center rounded-xl bg-[#915eff] px-6 py-3 font-semibold text-white transition hover:bg-[#7a4fe0]"
+          >
+            Download CV
+          </a> */}
         </div>
       </div>
 

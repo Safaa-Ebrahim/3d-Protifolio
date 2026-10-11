@@ -8,7 +8,10 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faRocket,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = ({
   index,
@@ -16,8 +19,11 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  imageFit = "cover",
+  imageBackground = "#0b0b1f",
   source_code_link,
   source_deplyment_link,
+  project_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -32,30 +38,57 @@ const ProjectCard = ({
         <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            alt={`${name} preview`}
+            style={
+              imageFit === "contain"
+                ? { backgroundColor: imageBackground }
+                : undefined
+            }
+            className={`w-full h-full rounded-2xl ${
+              imageFit === "contain" ? "object-contain" : "object-cover"
+            }`}
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="githup"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
+          <div className="absolute inset-0 flex justify-end items-start gap-2 m-3 card-img_hover">
+            {source_code_link && (
+              <a
+                href={source_code_link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${name} source code`}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
+              >
+                <img
+                  src={github}
+                  alt=""
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </a>
+            )}
 
-          <div className="absolute inset-0 mr-[60px] flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_deplyment_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <FontAwesomeIcon icon={faRocket} />
-            </div>
+            {source_deplyment_link && (
+              <a
+                href={source_deplyment_link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${name} live site`}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
+              >
+                <FontAwesomeIcon icon={faRocket} />
+              </a>
+            )}
+
+            {project_link && (
+              <a
+                href={project_link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${name} project details`}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center"
+              >
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </a>
+            )}
           </div>
         </div>
 
@@ -90,11 +123,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          A selection of projects that reflects my experience building
+          responsive products, e-commerce flows, dashboards, and interactive
+          web experiences with modern frontend and full-stack technologies.
         </motion.p>
       </div>
 

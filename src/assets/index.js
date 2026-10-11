@@ -15,10 +15,29 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import typescript from "./tech/typescript.png";
 import bootstrap from "./tech/bootstrap.png";
+import antdesign from "./tech/antdesign.png";
+import azuredevops from "./tech/azuredevops.png";
+import cloudflare from "./tech/cloudflare.png";
+import express from "./tech/express.png";
+import firebase from "./tech/firebase.png";
+import formik from "./tech/formik.png";
+import googlemaps from "./tech/googlemaps.png";
+import jenkins from "./tech/jenkins.png";
+import jest from "./tech/jest.png";
+import jira from "./tech/jira.png";
+import mui from "./tech/mui.png";
+import postman from "./tech/postman.png";
+import reacthookform from "./tech/reacthookform.png";
+import shadcnui from "./tech/shadcnui.png";
+import stripe from "./tech/stripe.png";
+import supabase from "./tech/supabase.png";
+import tailwindcss from "./tech/tailwindcss.png";
+import vscode from "./tech/vscode.png";
 
 import nti from "./company/nti2.png";
 import iti from "./company/iti.png";
 import collage from "./company/collage.png";
+import zetaton from "./company/zetaton.png";
 
 import comfy from './projects/Comfy - Where Luxury Meets Comfort.png';
 import movies from './projects/movies.png';
@@ -30,6 +49,12 @@ import weatherApp from "./projects/weather-app.png";
 import bondi from "./projects/Bondi-templet.png";
 import elzero from "./projects/Elzero-templet.png";
 import dashboard from "./projects/Dashboard.png";
+import enableDashboard from "./projects/enable-dashboard.jpg";
+import gameDayMeals from "./projects/game-day-meals-site.png";
+import wakktPreview from "./projects/wakkt-preview.png";
+import tableTuckPreview from "./projects/tabletuck-preview.png";
+import tapnetPreview from "./projects/tapnet-preview.png";
+import projectPlaceholder from "./projects/project-placeholder.svg";
 
 
 export {
@@ -49,9 +74,28 @@ export {
   reactjs,
   redux,
   typescript,
+  antdesign,
+  azuredevops,
+  cloudflare,
+  express,
+  firebase,
+  formik,
+  googlemaps,
+  jenkins,
+  jest,
+  jira,
+  mui,
+  postman,
+  reacthookform,
+  shadcnui,
+  stripe,
+  supabase,
+  tailwindcss,
+  vscode,
   nti,
   iti,
   collage,
+  zetaton,
   comfy,
   movies,
   lissome,
@@ -61,5 +105,11 @@ export {
   weatherApp,
   bondi,
   dashboard,
-  elzero
+  enableDashboard,
+  gameDayMeals,
+  wakktPreview,
+  tableTuckPreview,
+  tapnetPreview,
+  projectPlaceholder,
+  elzero,
 };
