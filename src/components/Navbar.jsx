@@ -48,7 +48,10 @@ export default function Navbar() {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Safaa &nbsp;{" "}
-            <span className="sm:block hidden"> | Frontend Developer</span>
+            <span className="sm:block hidden">
+              {" "}
+              | Frontend-focused Full Stack Developer
+            </span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
