@@ -49,6 +49,8 @@ import weatherApp from "./projects/weather-app.png";
 import bondi from "./projects/Bondi-templet.png";
 import elzero from "./projects/Elzero-templet.png";
 import dashboard from "./projects/Dashboard.png";
+import enableDashboard from "./projects/enable-dashboard.jpg";
+import gameDayMeals from "./projects/game-day-meals-site.png";
 
 
 export {
@@ -99,5 +101,7 @@ export {
   weatherApp,
   bondi,
   dashboard,
-  elzero
+  enableDashboard,
+  gameDayMeals,
+  elzero,
 };
