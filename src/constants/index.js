@@ -36,6 +36,7 @@ import {
   bondi,
   dashboard,
   elzero,
+  projectPlaceholder,
 } from "../assets";
 
 export const navLinks = [
@@ -183,6 +184,88 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Game Day Meals",
+    description:
+      "A full-stack food-ordering platform for web and mobile with real-time order tracking, event management, and separate experiences for restaurants, coaches, players, and administrators.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux Toolkit", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "pink-text-gradient" },
+      { name: "shadcn/ui", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Stripe", color: "pink-text-gradient" },
+      { name: "Google Places API", color: "blue-text-gradient" },
+    ],
+    image: projectPlaceholder,
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
+  {
+    name: "Enable",
+    description:
+      "A dashboard and mobile platform for task assignment and product tracking, featuring map-based job planning, role management, company wallets and payouts, analytics, and AI-assisted image reviews.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Node.js", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Material UI", color: "pink-text-gradient" },
+      { name: "Google Maps API", color: "blue-text-gradient" },
+    ],
+    image: projectPlaceholder,
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
+  {
+    name: "Wakkt",
+    description:
+      "A workforce management system for attendance and operations, with role-based administration, Supabase-backed dashboards, and time-off request workflows. Also contributed to technical reviews and release management.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Node.js", color: "blue-text-gradient" },
+      { name: "Supabase", color: "green-text-gradient" },
+      { name: "Material UI", color: "pink-text-gradient" },
+      { name: "Cloudflare", color: "blue-text-gradient" },
+    ],
+    image: projectPlaceholder,
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
+  {
+    name: "Tapnet",
+    description:
+      "A digital business card platform that uses NFC and QR codes for convenient, eco-friendly contact sharing. Contributed as a frontend technical reviewer and release manager.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Node.js", color: "blue-text-gradient" },
+      { name: "Supabase", color: "green-text-gradient" },
+      { name: "Material UI", color: "pink-text-gradient" },
+      { name: "Cloudflare", color: "blue-text-gradient" },
+    ],
+    image: projectPlaceholder,
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
+  {
+    name: "TableTuck",
+    description:
+      "A multi-brand restaurant platform spanning its website, dashboard, and mobile apps. Developed frontend features including improved data handling, soft deletes, live updates, multilingual pages, and location-based store discovery.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Redux", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
+      { name: "Material UI", color: "blue-text-gradient" },
+    ],
+    image: projectPlaceholder,
+    source_code_link: null,
+    source_deplyment_link: null,
+  },
   {
     name: "Movies",
     description: `Website that use a rest apis to fetch the movies and the trending movies, tv series and popular actors/actress.
